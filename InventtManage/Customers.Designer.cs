@@ -38,7 +38,7 @@
             this.customButtons1.ImageNormal = null;
             this.customButtons1.Location = new System.Drawing.Point(399, 72);
             this.customButtons1.Name = "customButtons1";
-            this.customButtons1.Size = new System.Drawing.Size(150, 83);
+            this.customButtons1.Size = new System.Drawing.Size(150, 135);
             this.customButtons1.TabIndex = 0;
             this.customButtons1.TabStop = false;
             // 
