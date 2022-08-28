@@ -263,6 +263,36 @@ namespace InventtManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home_26px {
+            get {
+                object obj = ResourceManager.GetObject("home_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_home_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_home_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap joyent_24px {
             get {
                 object obj = ResourceManager.GetObject("joyent_24px", resourceCulture);
@@ -316,6 +346,16 @@ namespace InventtManage.Properties {
         internal static System.Drawing.Bitmap Screenshot_2022_08_27_023731 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-08-27 023731", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_80px {
+            get {
+                object obj = ResourceManager.GetObject("shopping_cart_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

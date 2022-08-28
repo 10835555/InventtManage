@@ -71,5 +71,10 @@ namespace InventtManage
         {
             openChildForm(new CategoryList());
         }
+
+        private void customButtons1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ProductList());
+        }
     }
 }

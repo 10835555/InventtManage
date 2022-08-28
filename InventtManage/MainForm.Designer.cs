@@ -185,6 +185,7 @@
             this.customButtons1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customButtons1.TabIndex = 25;
             this.customButtons1.TabStop = false;
+            this.customButtons1.Click += new System.EventHandler(this.customButtons1_Click);
             // 
             // pictureBox1
             // 

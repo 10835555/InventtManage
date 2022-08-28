@@ -273,5 +273,17 @@
   <ItemGroup>
     <None Include="Resources\opened_folder_80px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_home_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_26px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
