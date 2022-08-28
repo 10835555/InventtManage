@@ -69,7 +69,7 @@ namespace InventtManage
 
         private void customButtons3_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new CategoryList());
         }
     }
 }

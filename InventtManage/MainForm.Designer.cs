@@ -35,21 +35,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.customButtons3 = new InventtManage.CustomButtons();
             this.customButtons2 = new InventtManage.CustomButtons();
             this.customButtons4 = new InventtManage.CustomButtons();
             this.customButtons5 = new InventtManage.CustomButtons();
             this.customButtons1 = new InventtManage.CustomButtons();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panelSub.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSub
@@ -123,37 +123,6 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Product";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 98);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 18);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Inventory Management System";
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(263, 0);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(618, 447);
-            this.panelMain.TabIndex = 1;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
             // customButtons3
             // 
             this.customButtons3.Image = ((System.Drawing.Image)(resources.GetObject("customButtons3.Image")));
@@ -217,6 +186,37 @@
             this.customButtons1.TabIndex = 25;
             this.customButtons1.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(45, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(14, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(234, 18);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Inventory Management System";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(263, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(618, 447);
+            this.panelMain.TabIndex = 1;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,18 +225,19 @@
             this.ClientSize = new System.Drawing.Size(881, 447);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSub);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSub.ResumeLayout(false);
             this.panelSub.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
