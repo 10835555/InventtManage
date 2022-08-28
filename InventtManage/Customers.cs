@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace InventtManage
 {
@@ -72,7 +73,24 @@ namespace InventtManage
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-
+            try
+            { 
+                if (MessageBox.Show("Do you really want to update this customer record?", "Record is being Updated", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("UPDATE CustomerTable SET CustomerName=@CustomerName, CustomerTelephone=@CustomerTelephone WHERE CustomerID LIKE '" + CustID.Text + "' ", Con);
+                    cm.Parameters.AddWithValue("@CustomerName", txtCustomerName.Text);
+                    cm.Parameters.AddWithValue("@CustomerTelephone", txtCustomerTelephone.Text);
+                    Con.Open();
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("You have successfully updated the user record");
+                    this.Dispose();
+                }
+              }
+              catch (Exception ex)
+              {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
