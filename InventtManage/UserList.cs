@@ -44,7 +44,46 @@ namespace InventtManage
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string colName = dgvUser.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+                Users users = new Users();
+                users.txtName.Text = dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString();
+                users.txtUserName.Text = dgvUser.Rows[e.RowIndex].Cells[2].Value.ToString();
+                users.txtPassword.Text = dgvUser.Rows[e.RowIndex].Cells[3].Value.ToString();
+                users.txtTelephone.Text = dgvUser.Rows[e.RowIndex].Cells[4].Value.ToString();
 
+                users.SaveButton.Enabled = false;
+                users.UpdateButton.Enabled = true;
+                users.txtUserName.Enabled = false;
+                users.ShowDialog();
+            }
+            else if (colName == "Delete")
+            {
+                if (MessageBox.Show("Do you really want to delete this user?", "Delete User Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                   Con.Open();
+                    cm = new SqlCommand("DELETE FROM UserTable WHERE Name LIKE '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", Con);
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("This user record has been successfully deleted!");
+                }
+            }
+            LoadUser();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Users users = new Users();
+            users.SaveButton.Enabled = true;
+            users.UpdateButton.Enabled = false;
+            users.ShowDialog();
+            LoadUser();
         }
     }
 }

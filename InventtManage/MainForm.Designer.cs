@@ -171,7 +171,7 @@
             this.customButtons2.Image = ((System.Drawing.Image)(resources.GetObject("customButtons2.Image")));
             this.customButtons2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customButtons2.ImageHover")));
             this.customButtons2.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customButtons2.ImageNormal")));
-            this.customButtons2.Location = new System.Drawing.Point(105, 210);
+            this.customButtons2.Location = new System.Drawing.Point(105, 249);
             this.customButtons2.Name = "customButtons2";
             this.customButtons2.Size = new System.Drawing.Size(45, 43);
             this.customButtons2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,6 +224,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSub);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSub.ResumeLayout(false);

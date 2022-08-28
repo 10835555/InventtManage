@@ -75,6 +75,12 @@ namespace InventtManage
         {
             try
             {
+                if (txtPassword.Text != txtConfirmPassword.Text)
+                {
+                    MessageBox.Show("Your passwords do not match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 if (MessageBox.Show("Do you really want to add this new user?", "Saving Record",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
                 {
                     cm= new SqlCommand("INSERT INTO UserTable(Name,Username,Password,Telephone)VALUES(@Name,@Username,@Password,@Telephone)", Con);
@@ -97,7 +103,9 @@ namespace InventtManage
 
         private void button3_Click(object sender, EventArgs e)
         {
-             Clear();
+            Clear();
+            SaveButton.Enabled = true;
+            UpdateButton.Enabled = false;
         }
 
         public void Clear()
@@ -105,7 +113,37 @@ namespace InventtManage
             txtName.Clear();
             txtUserName.Clear();
             txtPassword.Clear();
+            txtConfirmPassword.Clear();
             txtTelephone.Clear();
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtPassword.Text != txtConfirmPassword.Text)
+                {
+                    MessageBox.Show("Your passwords do not match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (MessageBox.Show("Do you really want to update this user record?", "Record is being Updated", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("UPDATE UserTable SET Name=@Name, Username=@Username, Password=@Password, Telephone=@Telephone WHERE Name LIKE '"+txtName.Text+"' ", Con);
+                    cm.Parameters.AddWithValue("@Name", txtName.Text);
+                    cm.Parameters.AddWithValue("@Username", txtUserName.Text);
+                    cm.Parameters.AddWithValue("@Password", txtPassword.Text);
+                    cm.Parameters.AddWithValue("@Telephone", txtTelephone.Text);
+                    Con.Open();
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("You have successfully updated the user record");
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
