@@ -74,6 +74,12 @@
     <Compile Include="CustomButtons.Designer.cs">
       <DependentUpon>CustomButtons.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     <EmbeddedResource Include="CustomButtons.resx">
       <DependentUpon>CustomButtons.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerList.resx">
+      <DependentUpon>CustomerList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +135,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
@@ -145,6 +155,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-08-27 023731.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_shoppingcart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_shopping_cart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulleted_list_ff24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulleted_list_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoriz_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorize_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference_foreground_selected_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_delivered_box_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_box_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joyent_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_80px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5f386cb-db8a-4306-9ce0-df64fe52e751.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

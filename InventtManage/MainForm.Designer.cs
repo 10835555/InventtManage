@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSub = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.customButtons3 = new InventtManage.CustomButtons();
             this.customButtons2 = new InventtManage.CustomButtons();
             this.customButtons4 = new InventtManage.CustomButtons();
@@ -72,16 +72,6 @@
             this.panelSub.Name = "panelSub";
             this.panelSub.Size = new System.Drawing.Size(263, 447);
             this.panelSub.TabIndex = 0;
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(263, 0);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(787, 447);
-            this.panelMain.TabIndex = 1;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // label4
             // 
@@ -154,6 +144,16 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Inventory Management System";
             // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(263, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(618, 447);
+            this.panelMain.TabIndex = 1;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
             // customButtons3
             // 
             this.customButtons3.Image = ((System.Drawing.Image)(resources.GetObject("customButtons3.Image")));
@@ -177,6 +177,7 @@
             this.customButtons2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customButtons2.TabIndex = 22;
             this.customButtons2.TabStop = false;
+            this.customButtons2.Click += new System.EventHandler(this.customButtons2_Click);
             // 
             // customButtons4
             // 
@@ -220,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1050, 447);
+            this.ClientSize = new System.Drawing.Size(881, 447);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelSub);
             this.Name = "MainForm";

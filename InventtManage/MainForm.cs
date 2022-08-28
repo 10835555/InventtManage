@@ -61,5 +61,10 @@ namespace InventtManage
         {
 
         }
+
+        private void customButtons2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CustomerList());
+        }
     }
 }
