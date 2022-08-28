@@ -65,6 +65,7 @@ namespace InventtManage
                     cm.Parameters.AddWithValue("@Price", Convert.ToInt16(txtPrice.Text));
                     cm.Parameters.AddWithValue("@Description", txtDescription.Text);
                     cm.Parameters.AddWithValue("@Category", txtCategory.Text);
+
                     Con.Open();
                     cm.ExecuteNonQuery();
                     Con.Close();
@@ -87,6 +88,41 @@ namespace InventtManage
             txtPrice.Clear();
             txtDescription.Clear();
             txtCategory .Text = "";
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            Clear();
+            SaveButton.Enabled = true;
+            UpdateButton.Enabled = false;
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to update this Category?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("UPDATE ProductTable SET ProductName=@ProductName, Quantity=@Quantity, Price=@Price, Description=@Description, Category=@Category WHERE ProductID LIKE '" + ProdID.Text + "' ", Con);
+                    cm.Parameters.AddWithValue("@ProductName", txtProductName.Text);
+                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(txtQuantity.Text));
+                    cm.Parameters.AddWithValue("@Price", Convert.ToInt16(txtPrice.Text));
+                    cm.Parameters.AddWithValue("@Description", txtDescription.Text);
+                    cm.Parameters.AddWithValue("@Category", txtCategory.Text);
+                    Con.Open();
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("Product has been successfully updated!");
+                    this.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

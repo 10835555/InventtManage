@@ -144,6 +144,7 @@
             this.CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.CloseButton.TabIndex = 40;
             this.CloseButton.TabStop = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
             // 
             // pictureBox2
             // 

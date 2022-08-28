@@ -26,7 +26,7 @@ namespace InventtManage
         {
             int i = 0;
             dgvProducts.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM ProductTable", Con);
+            cm = new SqlCommand("SELECT * FROM ProductTable WHERE CONCAT(ProductID, ProductName, Price, Description, Category) LIKE '%"+txtSearchBox.Text+"%'", Con);
             Con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -48,7 +48,38 @@ namespace InventtManage
 
         private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string colName = dgvProducts.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+                Products products = new Products();
+                products.ProdID.Text = dgvProducts.Rows[e.RowIndex].Cells[1].Value.ToString();
+                products.txtProductName.Text = dgvProducts.Rows[e.RowIndex].Cells[2].Value.ToString();
+                products.txtQuantity.Text = dgvProducts.Rows[e.RowIndex].Cells[3].Value.ToString();
+                products.txtPrice.Text = dgvProducts.Rows[e.RowIndex].Cells[4].Value.ToString();
+                products.txtDescription.Text = dgvProducts.Rows[e.RowIndex].Cells[5].Value.ToString();
+                products.txtCategory.Text = dgvProducts.Rows[e.RowIndex].Cells[6].Value.ToString();
 
+                products.SaveButton.Enabled = false;
+                products.UpdateButton.Enabled = true;
+                products.ShowDialog();
+            }
+            else if (colName == "Delete")
+            {
+                if (MessageBox.Show("Do you really want to delete this product?", "Delete User Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Con.Open();
+                    cm = new SqlCommand("DELETE FROM ProductTable WHERE ProductID LIKE '" + dgvProducts.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", Con);
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("This user record has been successfully deleted!");
+                }
+            }
+            LoadProduct();
+        }
+
+        private void SearchBox_TextChanged(object sender, EventArgs e)
+        {
+            LoadProduct();
         }
     }
 }

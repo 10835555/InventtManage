@@ -56,7 +56,7 @@
             // 
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(323, 234);
+            this.txtName.Location = new System.Drawing.Point(323, 226);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(211, 26);
             this.txtName.TabIndex = 8;
@@ -66,7 +66,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(242, 241);
+            this.label1.Location = new System.Drawing.Point(242, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 19);
             this.label1.TabIndex = 7;
@@ -77,7 +77,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(214, 273);
+            this.label2.Location = new System.Drawing.Point(214, 265);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 7;
@@ -88,7 +88,7 @@
             // 
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUserName.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(323, 266);
+            this.txtUserName.Location = new System.Drawing.Point(323, 258);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(211, 26);
             this.txtUserName.TabIndex = 8;
@@ -98,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(217, 305);
+            this.label3.Location = new System.Drawing.Point(217, 297);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 19);
             this.label3.TabIndex = 7;
@@ -109,7 +109,7 @@
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(323, 298);
+            this.txtPassword.Location = new System.Drawing.Point(323, 290);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(211, 26);
             this.txtPassword.TabIndex = 8;
@@ -119,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(178, 370);
+            this.label4.Location = new System.Drawing.Point(178, 362);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 19);
             this.label4.TabIndex = 7;
@@ -130,7 +130,7 @@
             // 
             this.txtTelephone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelephone.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelephone.Location = new System.Drawing.Point(323, 363);
+            this.txtTelephone.Location = new System.Drawing.Point(323, 355);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(211, 26);
             this.txtTelephone.TabIndex = 8;
@@ -189,7 +189,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(159, 337);
+            this.label6.Location = new System.Drawing.Point(159, 329);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 19);
             this.label6.TabIndex = 7;
@@ -200,7 +200,7 @@
             // 
             this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtConfirmPassword.Font = new System.Drawing.Font("Calibri Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(323, 330);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(323, 322);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(211, 26);
             this.txtConfirmPassword.TabIndex = 8;
@@ -210,7 +210,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(352, 202);
+            this.label7.Location = new System.Drawing.Point(355, 180);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 29);
             this.label7.TabIndex = 29;
@@ -232,9 +232,10 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(348, 78);
+            this.pictureBox2.Location = new System.Drawing.Point(351, 78);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 

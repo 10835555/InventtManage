@@ -47,6 +47,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCategory = new System.Windows.Forms.ComboBox();
+            this.ProdID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +84,7 @@
             this.DeleteButton.TabIndex = 41;
             this.DeleteButton.Text = "Clear";
             this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // UpdateButton
             // 
@@ -95,6 +97,7 @@
             this.UpdateButton.TabIndex = 40;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // SaveButton
             // 
@@ -237,6 +240,18 @@
             this.txtCategory.Size = new System.Drawing.Size(211, 21);
             this.txtCategory.TabIndex = 48;
             // 
+            // ProdID
+            // 
+            this.ProdID.AutoSize = true;
+            this.ProdID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProdID.Location = new System.Drawing.Point(163, 122);
+            this.ProdID.Name = "ProdID";
+            this.ProdID.Size = new System.Drawing.Size(82, 19);
+            this.ProdID.TabIndex = 30;
+            this.ProdID.Text = "Product ID";
+            this.ProdID.Visible = false;
+            this.ProdID.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,6 +274,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.ProdID);
             this.Controls.Add(this.label1);
             this.Name = "Products";
             this.Text = "Products";
@@ -290,6 +306,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox txtCategory;
+        public System.Windows.Forms.ComboBox txtCategory;
+        public System.Windows.Forms.Label ProdID;
     }
 }

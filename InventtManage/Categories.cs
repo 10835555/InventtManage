@@ -93,5 +93,10 @@ namespace InventtManage
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CloseButton_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
