@@ -76,5 +76,10 @@ namespace InventtManage
         {
             openChildForm(new ProductList());
         }
+
+        private void customButtons4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new OrderList());
+        }
     }
 }
