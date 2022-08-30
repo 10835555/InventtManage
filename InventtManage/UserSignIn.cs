@@ -8,56 +8,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InventtManage
 {
-    public partial class Form1 : Form
+    public partial class UserSignIn : Form
     {
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DELL\Documents\UserDb.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
-        public Form1()
+        public UserSignIn()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void UserSignIn_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void UShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked == true)
+            if (UShowPassword.Checked == true)
                 txtUPassword.UseSystemPasswordChar = false;
             else
                 txtUPassword.UseSystemPasswordChar = true;
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ULoginButton_Click(object sender, EventArgs e)
         {
             try
             {
                 cm = new SqlCommand("SELECT * FROM UserTable WHERE Username=@Username AND Password=@Password", Con);
-                cm.Parameters.AddWithValue("@Username", txtEmail.Text);
+                cm.Parameters.AddWithValue("@Username", txtUserUN.Text);
                 cm.Parameters.AddWithValue("@Password", txtUPassword.Text);
                 Con.Open();
                 dr = cm.ExecuteReader();
@@ -81,6 +63,11 @@ namespace InventtManage
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

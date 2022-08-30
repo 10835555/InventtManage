@@ -56,11 +56,17 @@
     <Compile Include="3.Stock.Designer.cs">
       <DependentUpon>3.Stock.cs</DependentUpon>
     </Compile>
-    <Compile Include="2.Sign in.cs">
+    <Compile Include="AdminCreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2.Sign in.Designer.cs">
-      <DependentUpon>2.Sign in.cs</DependentUpon>
+    <Compile Include="AdminCreateAccount.Designer.cs">
+      <DependentUpon>AdminCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSignIn.Designer.cs">
+      <DependentUpon>AdminSignIn.cs</DependentUpon>
     </Compile>
     <Compile Include="1.Splashh.cs">
       <SubType>Form</SubType>
@@ -98,6 +104,12 @@
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginTo.Designer.cs">
+      <DependentUpon>LoginTo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,14 +160,23 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSignIn.Designer.cs">
+      <DependentUpon>UserSignIn.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="1.Splashh.resx">
       <DependentUpon>1.Splashh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3.Stock.resx">
       <DependentUpon>3.Stock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2.Sign in.resx">
-      <DependentUpon>2.Sign in.cs</DependentUpon>
+    <EmbeddedResource Include="AdminCreateAccount.resx">
+      <DependentUpon>AdminCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSignIn.resx">
+      <DependentUpon>AdminSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
@@ -165,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginTo.resx">
+      <DependentUpon>LoginTo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -196,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSignIn.resx">
+      <DependentUpon>UserSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -305,6 +338,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Custom-inventory-management-app-with-kizeo-forms-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_back_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
