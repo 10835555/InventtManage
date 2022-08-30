@@ -75,6 +75,7 @@
             this.Column7,
             this.Edit,
             this.Delete});
+            this.dgvProducts.EnableHeadersVisualStyles = false;
             this.dgvProducts.Location = new System.Drawing.Point(-1, -1);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.Size = new System.Drawing.Size(768, 393);

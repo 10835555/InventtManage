@@ -52,9 +52,33 @@ namespace InventtManage
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Orders orders = new Orders();
-            orders.InsertButton.Enabled = true;
-            orders.UpdateButton.Enabled = false;
             orders.ShowDialog();
+            LoadOrder();
+        }
+
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dgvOrder.Columns[e.ColumnIndex].Name;
+          
+            if (colName == "Delete")
+            {
+                if (MessageBox.Show("Do you really want to delete this user?", "Delete User Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Con.Open();
+                    cm = new SqlCommand("DELETE FROM OrderTable WHERE OrderID LIKE '" + dgvOrder.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", Con);
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                    MessageBox.Show("This order record has been successfully deleted!");
+
+                    cm = new SqlCommand("UPDATE ProductTable SET Quantity=(Quantity+@Quantity) WHERE ProductID LIKE '" + dgvOrder.Rows[e.RowIndex].Cells[3].Value.ToString() + "' ", Con);
+                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(dgvOrder.Rows[e.RowIndex].Cells[5].Value.ToString()));
+
+                    Con.Open();
+                    cm.ExecuteNonQuery();
+                    Con.Close();
+                }
+            }
+            LoadOrder();
         }
     }
 }

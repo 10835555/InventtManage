@@ -18,6 +18,7 @@ namespace InventtManage
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DELL\Documents\UserDb.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
+        int Quantity = 0;
         public Orders()
         {
             InitializeComponent();
@@ -67,7 +68,6 @@ namespace InventtManage
             Con.Close();
         }
 
-        int Quantity = 0;
         private void txtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
             LoadCustomer();
@@ -88,13 +88,9 @@ namespace InventtManage
 
         }
 
-        private void UpdateButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            GetQuantity();
             if (Convert.ToInt16(UDQuantity.Value) > Quantity)
             {
                 MessageBox.Show("There is not enough items in stock!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -119,7 +115,6 @@ namespace InventtManage
             txtProductID.Text = dgvProducts.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtProductName.Text = dgvProducts.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtPrice.Text = dgvProducts.Rows[e.RowIndex].Cells[4].Value.ToString();
-            Quantity = Convert.ToInt16(dgvProducts.Rows[e.RowIndex].Cells[3].Value.ToString());
         }
 
         private void dgvCustomer_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -157,11 +152,15 @@ namespace InventtManage
                     MessageBox.Show("You have successfully added a new user");
                     Clear();
 
-                    cm = new SqlCommand("UPDATE ProductTable SET Quantity = (Quantity-@Quantity) WHERE ProductID LIKE '" + txtProductID.Text + "' ", Con);
+                    cm = new SqlCommand("UPDATE ProductTable SET Quantity=(Quantity-@Quantity) WHERE ProductID LIKE '" + txtProductID.Text + "' ", Con);
                     cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(UDQuantity.Value));
+
+                    
                     Con.Open();
                     cm.ExecuteNonQuery();
                     Con.Close();
+                    Clear();
+                    LoadProduct();
                 }
             }
             catch (Exception ex)
@@ -188,7 +187,19 @@ namespace InventtManage
         {
             Clear();
             InsertButton.Enabled = true;
-            UpdateButton.Enabled = false;
+        }
+
+        public void GetQuantity()
+        {
+            cm = new SqlCommand("SELECT Quantity FROM ProductTable WHERE ProductID='" + txtProductID.Text + "'", Con);
+            Con.Open();
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                Quantity = Convert.ToInt32(dr[0].ToString());
+            }
+            dr.Close();
+            Con.Close();
         }
     }
 }

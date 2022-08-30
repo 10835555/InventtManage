@@ -70,9 +70,9 @@
             this.txtOrderDate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.UpdateButton = new System.Windows.Forms.Button();
             this.InsertButton = new System.Windows.Forms.Button();
             this.UDQuantity = new System.Windows.Forms.NumericUpDown();
+            this.OrdID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -116,6 +116,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.OrdID);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
@@ -176,6 +177,7 @@
             this.Column2,
             this.Column3});
             this.dgvCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvCustomer.EnableHeadersVisualStyles = false;
             this.dgvCustomer.Location = new System.Drawing.Point(0, 0);
             this.dgvCustomer.Name = "dgvCustomer";
             this.dgvCustomer.RowHeadersVisible = false;
@@ -207,7 +209,6 @@
             // 
             this.panel3.Controls.Add(this.UDQuantity);
             this.panel3.Controls.Add(this.DeleteButton);
-            this.panel3.Controls.Add(this.UpdateButton);
             this.panel3.Controls.Add(this.InsertButton);
             this.panel3.Controls.Add(this.txtOrderDate);
             this.panel3.Controls.Add(this.label4);
@@ -281,6 +282,7 @@
             this.Column6,
             this.Column7});
             this.dgvProducts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvProducts.EnableHeadersVisualStyles = false;
             this.dgvProducts.Location = new System.Drawing.Point(0, 0);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowHeadersVisible = false;
@@ -483,25 +485,12 @@
             this.DeleteButton.UseVisualStyleBackColor = false;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // UpdateButton
-            // 
-            this.UpdateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateButton.ForeColor = System.Drawing.Color.White;
-            this.UpdateButton.Location = new System.Drawing.Point(342, 428);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(97, 31);
-            this.UpdateButton.TabIndex = 12;
-            this.UpdateButton.Text = "Update Order";
-            this.UpdateButton.UseVisualStyleBackColor = false;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
             // InsertButton
             // 
             this.InsertButton.BackColor = System.Drawing.Color.Blue;
             this.InsertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InsertButton.ForeColor = System.Drawing.Color.White;
-            this.InsertButton.Location = new System.Drawing.Point(231, 428);
+            this.InsertButton.Location = new System.Drawing.Point(336, 428);
             this.InsertButton.Name = "InsertButton";
             this.InsertButton.Size = new System.Drawing.Size(97, 31);
             this.InsertButton.TabIndex = 13;
@@ -521,6 +510,16 @@
             this.UDQuantity.Size = new System.Drawing.Size(204, 20);
             this.UDQuantity.TabIndex = 14;
             this.UDQuantity.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // OrdID
+            // 
+            this.OrdID.AutoSize = true;
+            this.OrdID.Location = new System.Drawing.Point(17, 437);
+            this.OrdID.Name = "OrdID";
+            this.OrdID.Size = new System.Drawing.Size(41, 13);
+            this.OrdID.TabIndex = 10;
+            this.OrdID.Text = "label14";
+            this.OrdID.Visible = false;
             // 
             // Orders
             // 
@@ -590,8 +589,8 @@
         private System.Windows.Forms.DateTimePicker txtOrderDate;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Button DeleteButton;
-        public System.Windows.Forms.Button UpdateButton;
         public System.Windows.Forms.Button InsertButton;
         private System.Windows.Forms.NumericUpDown UDQuantity;
+        public System.Windows.Forms.Label OrdID;
     }
 }
