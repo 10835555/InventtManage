@@ -223,6 +223,16 @@ namespace InventtManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Custom_inventory_management_app_with_kizeo_forms_01 {
+            get {
+                object obj = ResourceManager.GetObject("Custom-inventory-management-app-with-kizeo-forms-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_16px {
             get {
                 object obj = ResourceManager.GetObject("edit_16px", resourceCulture);

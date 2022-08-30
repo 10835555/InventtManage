@@ -35,16 +35,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.customButtons3 = new InventtManage.CustomButtons();
             this.customButtons2 = new InventtManage.CustomButtons();
             this.customButtons4 = new InventtManage.CustomButtons();
             this.customButtons5 = new InventtManage.CustomButtons();
             this.customButtons1 = new InventtManage.CustomButtons();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panelSub.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).BeginInit();
@@ -126,6 +129,51 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Product";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(14, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(234, 18);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Inventory Management System";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Controls.Add(this.pictureBox2);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(263, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(764, 447);
+            this.panelMain.TabIndex = 1;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Unispace", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Yellow;
+            this.label7.Location = new System.Drawing.Point(61, 199);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 44);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "ADMIN";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::InventtManage.Properties.Resources.Custom_inventory_management_app_with_kizeo_forms_01;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(764, 447);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // customButtons3
             // 
             this.customButtons3.Image = ((System.Drawing.Image)(resources.GetObject("customButtons3.Image")));
@@ -201,39 +249,6 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 18);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Inventory Management System";
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(263, 0);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(764, 447);
-            this.panelMain.TabIndex = 1;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Unispace", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Yellow;
-            this.label7.Location = new System.Drawing.Point(61, 199);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 44);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "ADMIN";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,6 +264,8 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSub.ResumeLayout(false);
             this.panelSub.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).EndInit();
@@ -276,5 +293,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -303,5 +303,8 @@
   <ItemGroup>
     <None Include="Resources\home_26px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-inventory-management-app-with-kizeo-forms-01.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
