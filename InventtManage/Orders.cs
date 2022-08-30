@@ -101,8 +101,11 @@ namespace InventtManage
                 UDQuantity.Value = UDQuantity.Value - 1;
                 return;
             }
-            int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQuantity.Value);
-            txtTotal.Text = total.ToString();
+            if (Convert.ToInt16(UDQuantity.Value) < 0)
+            {
+                int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQuantity.Value);
+                txtTotal.Text = total.ToString();
+            }
         }
 
         private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -153,6 +156,12 @@ namespace InventtManage
                     Con.Close();
                     MessageBox.Show("You have successfully added a new user");
                     Clear();
+
+                    cm = new SqlCommand("UPDATE ProductTable SET Quantity = (Quantity-@Quantity) WHERE ProductID LIKE '" + txtProductID.Text + "' ", Con);
+                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(UDQuantity.Value));
+                    Con.Open();
+                    cm.ExecuteNonQuery();
+                    Con.Close();
                 }
             }
             catch (Exception ex)
@@ -173,6 +182,13 @@ namespace InventtManage
             UDQuantity.Value = 0;
             txtTotal.Clear();
             txtOrderDate.Value = DateTime.Now;
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            Clear();
+            InsertButton.Enabled = true;
+            UpdateButton.Enabled = false;
         }
     }
 }

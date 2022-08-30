@@ -26,14 +26,14 @@ namespace InventtManage
         public void LoadOrder()
         {
             int i = 0;
-            dgvUser.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM UserTable", Con);
+            dgvOrder.Rows.Clear();
+            cm = new SqlCommand("SELECT * FROM OrderTable", Con);
             Con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dgvUser.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
+                dgvOrder.Rows.Add(i, dr[0].ToString(), Convert.ToDateTime(dr[1].ToString()).ToString("dd/MM/yyyy"), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
             }
             dr.Close();
             Con.Close();
