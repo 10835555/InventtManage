@@ -91,5 +91,11 @@ namespace InventtManage
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure you want to log out?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            this.Dispose();
+        }
     }
 }

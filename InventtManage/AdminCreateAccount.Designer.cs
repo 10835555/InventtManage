@@ -196,7 +196,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "AdminCreateAccount";
-            this.Text = "AdminLogin";
+            this.Text = "AdminCreateAccount";
             this.Load += new System.EventHandler(this.AdminLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -36,7 +36,7 @@ namespace InventtManage
 
         private void ACAB_Click_1(object sender, EventArgs e)
         {
-            var myForm = new Sales();
+            var myForm = new AdminCreateAccount();
             myForm.Show();
         }
     }

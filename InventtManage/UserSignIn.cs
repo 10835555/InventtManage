@@ -47,7 +47,7 @@ namespace InventtManage
                 if (dr.HasRows)
                 {
                     MessageBox.Show("Welcome " + dr["Username"].ToString() + " ! ", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MainForm main = new MainForm();
+                    Sales main = new Sales();
                     this.Hide();
                     main.ShowDialog();
 
