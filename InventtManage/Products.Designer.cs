@@ -239,6 +239,7 @@
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(211, 21);
             this.txtCategory.TabIndex = 48;
+            this.txtCategory.SelectedIndexChanged += new System.EventHandler(this.txtCategory_SelectedIndexChanged);
             // 
             // ProdID
             // 

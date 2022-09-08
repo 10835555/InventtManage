@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSub = new System.Windows.Forms.Panel();
+            this.customButtons6 = new InventtManage.CustomButtons();
+            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,8 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelSub.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customButtons6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).BeginInit();
@@ -60,9 +63,11 @@
             // panelSub
             // 
             this.panelSub.BackColor = System.Drawing.Color.Blue;
+            this.panelSub.Controls.Add(this.customButtons6);
             this.panelSub.Controls.Add(this.button1);
             this.panelSub.Controls.Add(this.label4);
             this.panelSub.Controls.Add(this.label3);
+            this.panelSub.Controls.Add(this.label8);
             this.panelSub.Controls.Add(this.label6);
             this.panelSub.Controls.Add(this.label5);
             this.panelSub.Controls.Add(this.label1);
@@ -80,6 +85,32 @@
             this.panelSub.Size = new System.Drawing.Size(263, 447);
             this.panelSub.TabIndex = 0;
             this.panelSub.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSub_Paint);
+            // 
+            // customButtons6
+            // 
+            this.customButtons6.Image = global::InventtManage.Properties.Resources.administrative_tools_filled_24px;
+            this.customButtons6.ImageHover = global::InventtManage.Properties.Resources.administrative_tools_24px;
+            this.customButtons6.ImageNormal = global::InventtManage.Properties.Resources.administrative_tools_filled_24px;
+            this.customButtons6.Location = new System.Drawing.Point(185, 314);
+            this.customButtons6.Name = "customButtons6";
+            this.customButtons6.Size = new System.Drawing.Size(45, 43);
+            this.customButtons6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.customButtons6.TabIndex = 32;
+            this.customButtons6.TabStop = false;
+            this.customButtons6.Click += new System.EventHandler(this.customButtons6_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(73, 397);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 38);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Logout";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -101,25 +132,38 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Customers";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(192, 360);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Admins";
+            this.label8.Click += new System.EventHandler(this.label6_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(148, 360);
+            this.label6.Location = new System.Drawing.Point(114, 360);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 28;
             this.label6.Text = "Orders";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(70, 360);
+            this.label5.Location = new System.Drawing.Point(29, 360);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 29;
-            this.label5.Text = "Users";
+            this.label5.Text = "Cashiers";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 
@@ -162,9 +206,9 @@
             this.customButtons4.Image = ((System.Drawing.Image)(resources.GetObject("customButtons4.Image")));
             this.customButtons4.ImageHover = ((System.Drawing.Image)(resources.GetObject("customButtons4.ImageHover")));
             this.customButtons4.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customButtons4.ImageNormal")));
-            this.customButtons4.Location = new System.Drawing.Point(147, 314);
+            this.customButtons4.Location = new System.Drawing.Point(106, 314);
             this.customButtons4.Name = "customButtons4";
-            this.customButtons4.Size = new System.Drawing.Size(39, 43);
+            this.customButtons4.Size = new System.Drawing.Size(46, 43);
             this.customButtons4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customButtons4.TabIndex = 23;
             this.customButtons4.TabStop = false;
@@ -175,7 +219,7 @@
             this.customButtons5.Image = ((System.Drawing.Image)(resources.GetObject("customButtons5.Image")));
             this.customButtons5.ImageHover = ((System.Drawing.Image)(resources.GetObject("customButtons5.ImageHover")));
             this.customButtons5.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customButtons5.ImageNormal")));
-            this.customButtons5.Location = new System.Drawing.Point(69, 314);
+            this.customButtons5.Location = new System.Drawing.Point(28, 314);
             this.customButtons5.Name = "customButtons5";
             this.customButtons5.Size = new System.Drawing.Size(45, 43);
             this.customButtons5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,19 +294,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(73, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 38);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Logout";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // MainForm
             // 
@@ -279,6 +311,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSub.ResumeLayout(false);
             this.panelSub.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customButtons6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customButtons4)).EndInit();
@@ -310,5 +343,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
+        private CustomButtons customButtons6;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -109,5 +109,25 @@ namespace InventtManage
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customButtons6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AdminLists());
+        }
     }
 }

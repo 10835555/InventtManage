@@ -16,5 +16,15 @@ namespace InventtManage
         {
             InitializeComponent();
         }
+
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void StartSalesBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

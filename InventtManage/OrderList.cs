@@ -21,7 +21,6 @@ namespace InventtManage
         public OrderList()
         {
             InitializeComponent();
-            LoadOrder();
         }
 
         public void LoadOrder()
@@ -52,9 +51,7 @@ namespace InventtManage
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Orders orders = new Orders();
-            orders.ShowDialog();
-            LoadOrder();
+            
         }
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)

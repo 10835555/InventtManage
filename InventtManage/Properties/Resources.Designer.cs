@@ -133,6 +133,26 @@ namespace InventtManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administrative_tools_24px {
+            get {
+                object obj = ResourceManager.GetObject("administrative_tools_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap administrative_tools_filled_24px {
+            get {
+                object obj = ResourceManager.GetObject("administrative_tools_filled_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap box_24px {
             get {
                 object obj = ResourceManager.GetObject("box_24px", resourceCulture);
@@ -263,6 +283,26 @@ namespace InventtManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap find_user_male_24px {
+            get {
+                object obj = ResourceManager.GetObject("find_user_male_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap findusermale_24px {
+            get {
+                object obj = ResourceManager.GetObject("findusermale_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap go_back_30px {
             get {
                 object obj = ResourceManager.GetObject("go_back_30px", resourceCulture);
@@ -356,6 +396,26 @@ namespace InventtManage.Properties {
         internal static System.Drawing.Bitmap reception_80px {
             get {
                 object obj = ResourceManager.GetObject("reception_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sale_24px {
+            get {
+                object obj = ResourceManager.GetObject("sale_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sales_24px {
+            get {
+                object obj = ResourceManager.GetObject("sales_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

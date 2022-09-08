@@ -59,9 +59,9 @@ namespace InventtManage
                 if (MessageBox.Show("Are you sure you want to save this product?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO ProductTable(ProductName,Quantity,Price,Description,Category)VALUES(@ProductName, @Quantity, @Price, @Description, @Category)", Con);
+                    cm = new SqlCommand("INSERT INTO ProductTable(ProductName,PQuantity,Price,Description,Category)VALUES(@ProductName, @PQuantity, @Price, @Description, @Category)", Con);
                     cm.Parameters.AddWithValue("@ProductName", txtProductName.Text);
-                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(txtQuantity.Text));
+                    cm.Parameters.AddWithValue("@PQuantity", Convert.ToInt16(txtQuantity.Text));
                     cm.Parameters.AddWithValue("@Price", Convert.ToInt16(txtPrice.Text));
                     cm.Parameters.AddWithValue("@Description", txtDescription.Text);
                     cm.Parameters.AddWithValue("@Category", txtCategory.Text);
@@ -104,9 +104,9 @@ namespace InventtManage
                 if (MessageBox.Show("Are you sure you want to update this Category?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE ProductTable SET ProductName=@ProductName, Quantity=@Quantity, Price=@Price, Description=@Description, Category=@Category WHERE ProductID LIKE '" + ProdID.Text + "' ", Con);
+                    cm = new SqlCommand("UPDATE ProductTable SET ProductName=@ProductName, PQuantity=@PQuantity, Price=@Price, Description=@Description, Category=@Category WHERE ProductID LIKE '" + ProdID.Text + "' ", Con);
                     cm.Parameters.AddWithValue("@ProductName", txtProductName.Text);
-                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(txtQuantity.Text));
+                    cm.Parameters.AddWithValue("@PQuantity", Convert.ToInt16(txtQuantity.Text));
                     cm.Parameters.AddWithValue("@Price", Convert.ToInt16(txtPrice.Text));
                     cm.Parameters.AddWithValue("@Description", txtDescription.Text);
                     cm.Parameters.AddWithValue("@Category", txtCategory.Text);
@@ -123,6 +123,11 @@ namespace InventtManage
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

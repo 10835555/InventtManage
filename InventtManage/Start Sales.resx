@@ -117,53 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAU1JREFUOE9j
-        oCvYHpdkeS0y8vTtpKRrl4KCyqDCxIElvUUxcxau+LN/2vz/3/v7/9+Kj78GlSIMFs5ujVm+advvG8+/
-        /j907tb/XdMX/L8SEXEKKo0fHFzir7tyWf/7g0CNN4EGXH/25f/M+Sv+rktKs4EqwQ2OLAo2ub435+7/
-        d4v+Hzy08v+uE5f+z1+17ueqznw/qBLcAKT52t68OyDN/98t/v/39cL/y5b1vp0xu9UVqgQ3gGjORdF8
-        YWvq9f3zPRSgSnCDw0sDjMnXvAqkOec2WZq3zPALurgt8ydZmv8zMDDunh3+9OnZBrDmf28W/r+4Pe3m
-        /vnBGlAl+EFRik/4mVW5X+7vyfv/6FTN/7ObU39tmeptBZUmDOKj/C8Fh4b+P7Is6/vOWSHPtk4P8YFK
-        EQcCA33eJsT6XynP9otoaGhgggrTAzAwAAC0CuaScsavFgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="dataGridViewImageColumn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAW5JREFUOE+l
-        U8tOwlAQbfRPNP5I3yyBkJion8ArAdaseCyA3yCGDXtiFGJoy0YWxhh3StCNUURLoNhx5tqWFtAgTjK5
-        mTvnzNyZO8P5BfL5HY3nT4xQ6NxQlGddkkw6ydYE4Zj8DnRVLnl+H8E3/Wh0/JTLwXu57CnZdG+o6nVP
-        FPccykI0STrQZfl1kErNJ7Ua/KTotzTEUTKHynGnsdiurih3g3T6cx1pWR+SyTnib71yuoJw1I9Exi5g
-        Wq/DtNEIkMime9e+Qjz25JAFwLraj1ijH2ybphdk2SYdZjJAjWUBsKbRuFTynIyE2Yhk6fo32Zed9K1Y
-        BEOWX1iArijOzWo1ACCddToAtg1Wu73i+6hUQBNFiwVY+4Jmk2WetVpgTybM9vsDL8COXmzTg56qnrEA
-        f/4FLLcfDi9+wZ2D+0RiszmIx4NzQPKvSXTFvwvDbBZGhQIj0Uk1/7oLrvi3kV6E/QE6N9rG7YTjvgAz
-        BS+e9RbOLAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="dataGridViewImageColumn3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAW5JREFUOE+l
-        U8tOwlAQbfRPNP5I3yyBkJion8ArAdaseCyA3yCGDXtiFGJoy0YWxhh3StCNUURLoNhx5tqWFtAgTjK5
-        mTvnzNyZO8P5BfL5HY3nT4xQ6NxQlGddkkw6ydYE4Zj8DnRVLnl+H8E3/Wh0/JTLwXu57CnZdG+o6nVP
-        FPccykI0STrQZfl1kErNJ7Ua/KTotzTEUTKHynGnsdiurih3g3T6cx1pWR+SyTnib71yuoJw1I9Exi5g
-        Wq/DtNEIkMime9e+Qjz25JAFwLraj1ijH2ybphdk2SYdZjJAjWUBsKbRuFTynIyE2Yhk6fo32Zed9K1Y
-        BEOWX1iArijOzWo1ACCddToAtg1Wu73i+6hUQBNFiwVY+4Jmk2WetVpgTybM9vsDL8COXmzTg56qnrEA
-        f/4FLLcfDi9+wZ2D+0RiszmIx4NzQPKvSXTFvwvDbBZGhQIj0Uk1/7oLrvi3kV6E/QE6N9rG7YTjvgAz
-        BS+e9RbOLAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="dataGridViewImageColumn4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAU1JREFUOE9j
-        oCvYHpdkeS0y8vTtpKRrl4KCyqDCxIElvUUxcxau+LN/2vz/3/v7/9+Kj78GlSIMFs5ujVm+advvG8+/
-        /j907tb/XdMX/L8SEXEKKo0fHFzir7tyWf/7g0CNN4EGXH/25f/M+Sv+rktKs4EqwQ2OLAo2ub435+7/
-        d4v+Hzy08v+uE5f+z1+17ueqznw/qBLcAKT52t68OyDN/98t/v/39cL/y5b1vp0xu9UVqgQ3gGjORdF8
-        YWvq9f3zPRSgSnCDw0sDjMnXvAqkOec2WZq3zPALurgt8ydZmv8zMDDunh3+9OnZBrDmf28W/r+4Pe3m
-        /vnBGlAl+EFRik/4mVW5X+7vyfv/6FTN/7ObU39tmeptBZUmDOKj/C8Fh4b+P7Is6/vOWSHPtk4P8YFK
-        EQcCA33eJsT6XynP9otoaGhgggrTAzAwAAC0CuaScsavFgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -191,6 +144,7 @@
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAW5JREFUOE+l

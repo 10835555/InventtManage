@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ACAB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +42,7 @@
             this.ALB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ALB.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ALB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ALB.Location = new System.Drawing.Point(238, 366);
+            this.ALB.Location = new System.Drawing.Point(239, 340);
             this.ALB.Name = "ALB";
             this.ALB.Size = new System.Drawing.Size(308, 34);
             this.ALB.TabIndex = 8;
@@ -56,7 +55,7 @@
             this.ULB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ULB.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ULB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ULB.Location = new System.Drawing.Point(238, 406);
+            this.ULB.Location = new System.Drawing.Point(239, 395);
             this.ULB.Name = "ULB";
             this.ULB.Size = new System.Drawing.Size(308, 34);
             this.ULB.TabIndex = 8;
@@ -95,19 +94,6 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // ACAB
-            // 
-            this.ACAB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ACAB.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ACAB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ACAB.Location = new System.Drawing.Point(238, 326);
-            this.ACAB.Name = "ACAB";
-            this.ACAB.Size = new System.Drawing.Size(308, 34);
-            this.ACAB.TabIndex = 8;
-            this.ACAB.Text = "Create Admin";
-            this.ACAB.UseVisualStyleBackColor = false;
-            this.ACAB.Click += new System.EventHandler(this.ACAB_Click_1);
-            // 
             // LoginTo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,7 +103,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ULB);
-            this.Controls.Add(this.ACAB);
             this.Controls.Add(this.ALB);
             this.Name = "LoginTo";
             this.Text = "LoginTo";
@@ -135,6 +120,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button ACAB;
     }
 }

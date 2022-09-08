@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="find_user_male_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find_user_male_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="staff_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\staff_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,6 +132,9 @@
   </data>
   <data name="cancel_16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_shopping_cart_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_shopping_cart_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Screenshot 2022-08-27 023731" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2022-08-27 023731.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +163,9 @@
   <data name="conference_foreground_selected_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conference_foreground_selected_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="go_back_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_back_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="empty_box_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\empty_box_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,6 +178,9 @@
   <data name="Custom-inventory-management-app-with-kizeo-forms-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Custom-inventory-management-app-with-kizeo-forms-01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="administrative_tools_filled_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrative_tools_filled_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bulleted_list_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulleted_list_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +190,8 @@
   <data name="edit_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="categoriz_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\categoriz_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="administrative_tools_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrative_tools_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_shoppingcart_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_shoppingcart_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,13 +220,19 @@
   <data name="a5f386cb-db8a-4306-9ce0-df64fe52e751" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a5f386cb-db8a-4306-9ce0-df64fe52e751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_shopping_cart_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_shopping_cart_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="findusermale_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\findusermale_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="categoriz_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\categoriz_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bulleted_list_ff24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bulleted_list_ff24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="go_back_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_back_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sale_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sale_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sales_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sales_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

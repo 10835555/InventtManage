@@ -62,6 +62,12 @@
     <Compile Include="AdminCreateAccount.Designer.cs">
       <DependentUpon>AdminCreateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLists.Designer.cs">
+      <DependentUpon>AdminLists.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="1.Splashh.Designer.cs">
       <DependentUpon>1.Splashh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierMainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierMainform.Designer.cs">
+      <DependentUpon>CashierMainform.cs</DependentUpon>
     </Compile>
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
@@ -116,6 +128,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +166,12 @@
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Start Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start Sales.Designer.cs">
+      <DependentUpon>Start Sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,8 +199,14 @@
     <EmbeddedResource Include="AdminCreateAccount.resx">
       <DependentUpon>AdminCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminLists.resx">
+      <DependentUpon>AdminLists.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminSignIn.resx">
       <DependentUpon>AdminSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierMainform.resx">
+      <DependentUpon>CashierMainform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Categories.resx">
       <DependentUpon>Categories.cs</DependentUpon>
@@ -198,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderList.resx">
       <DependentUpon>OrderList.cs</DependentUpon>
@@ -221,6 +254,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start Sales.resx">
+      <DependentUpon>Start Sales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +380,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\go_back_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_user_male_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\findusermale_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrative_tools_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrative_tools_filled_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

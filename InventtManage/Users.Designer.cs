@@ -210,11 +210,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(355, 180);
+            this.label7.Location = new System.Drawing.Point(330, 177);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 29);
+            this.label7.Size = new System.Drawing.Size(154, 29);
             this.label7.TabIndex = 29;
-            this.label7.Text = "USERS";
+            this.label7.Text = "CASHIERS";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox3

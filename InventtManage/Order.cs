@@ -7,40 +7,33 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace InventtManage
 {
-    public partial class Orders : Form
+    public partial class Order : Form
     {
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DELL\Documents\UserDb.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         int Quantity = 0;
-        public Orders()
+        public Order()
         {
             InitializeComponent();
             LoadCustomer();
             LoadProduct();
         }
 
-        private void Orders_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
 
         public void LoadCustomer()
         {
             int i = 0;
             dgvCustomer.Rows.Clear();
-            cm = new SqlCommand("SELECT CustomerID, CustomerName FROM CustomerTable WHERE CONCAT(CustomerID,CustomerName) LIKE '%"+txtSearchCustomer.Text+"%'", Con);
+            cm = new SqlCommand("SELECT CustomerID, CustomerName FROM CustomerTable WHERE CONCAT(CustomerID,CustomerName) LIKE '%" + txtSearchCustomer.Text + "%'", Con);
             Con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -68,6 +61,14 @@ namespace InventtManage
             Con.Close();
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
+        }
+
+        
+
         private void txtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
             LoadCustomer();
@@ -78,17 +79,8 @@ namespace InventtManage
             LoadProduct();
         }
 
-        private void pictureBox3_Click_1(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void UDQuantity_ValueChanged(object sender, EventArgs e)
         {
             GetQuantity();
             if (Convert.ToInt16(UDQuantity.Value) > Quantity)
@@ -99,8 +91,8 @@ namespace InventtManage
             }
             if (Convert.ToInt16(UDQuantity.Value) < 0)
             {
-                int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQuantity.Value);
-                txtTotal.Text = total.ToString();
+            int total = Convert.ToInt16(txtPrice.Text) * Convert.ToInt16(UDQuantity.Value);
+            txtTotal.Text = total.ToString();
             }
         }
 
@@ -115,12 +107,6 @@ namespace InventtManage
             txtProductID.Text = dgvProducts.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtProductName.Text = dgvProducts.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtPrice.Text = dgvProducts.Rows[e.RowIndex].Cells[4].Value.ToString();
-            Quantity = Convert.ToInt16(UDQuantity.Value);
-        }
-
-        private void dgvCustomer_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void InsertButton_Click(object sender, EventArgs e)
@@ -138,7 +124,7 @@ namespace InventtManage
                     return;
                 }
 
-                if (MessageBox.Show("Do you really want to add this new user?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Do you really want to add this new order?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cm = new SqlCommand("INSERT INTO OrderTable(OrderDate, ProductID, CustomerID, Quantity, Price, Total)VALUES(@OrderDate, @ProductID, @CustomerID, @Quantity, @Price, @Total)", Con);
                     cm.Parameters.AddWithValue("@OrderDate", txtOrderDate.Value);
@@ -150,13 +136,13 @@ namespace InventtManage
                     Con.Open();
                     cm.ExecuteNonQuery();
                     Con.Close();
-                    MessageBox.Show("You have successfully added a new user");
+                    MessageBox.Show("You have successfully added a new order");
                     Clear();
 
-                    cm = new SqlCommand("UPDATE ProductTable SET Quantity=(Quantity-@Quantity) WHERE ProductID LIKE '" + txtProductID.Text + "' ", Con);
-                    cm.Parameters.AddWithValue("@Quantity", Convert.ToInt16(UDQuantity.Value));
+                    cm = new SqlCommand("UPDATE ProductTable SET PQuantity=(PQuantity-@PQuantity) WHERE ProductID LIKE '" + txtProductID.Text + "' ", Con);
+                    cm.Parameters.AddWithValue("@PQuantity", Convert.ToInt16(UDQuantity.Value));
 
-                    
+
                     Con.Open();
                     cm.ExecuteNonQuery();
                     Con.Close();
@@ -179,7 +165,7 @@ namespace InventtManage
             txtProductName.Clear();
 
             txtPrice.Clear();
-            UDQuantity.Value = 0;
+            UDQuantity.Value = 1;
             txtTotal.Clear();
             txtOrderDate.Value = DateTime.Now;
         }
@@ -187,12 +173,11 @@ namespace InventtManage
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             Clear();
-            InsertButton.Enabled = true;
         }
 
         public void GetQuantity()
         {
-            cm = new SqlCommand("SELECT Quantity FROM ProductTable WHERE ProductID='" + txtProductID.Text + "'", Con);
+            cm = new SqlCommand("SELECT PQuantity FROM ProductTable WHERE ProductID='" + txtProductID.Text + "'", Con);
             Con.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -201,16 +186,6 @@ namespace InventtManage
             }
             dr.Close();
             Con.Close();
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
